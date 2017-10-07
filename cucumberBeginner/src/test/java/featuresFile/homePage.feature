@@ -1,14 +1,14 @@
 Feature: Verify features of DemoQA HomePage
-  
-  Scenario Ouline: Verify detail of first carousel
-  
-  Given : User is at DemoQA HomePage
-  When : User clicks on <carousel> dot
-  And : Waits for the product detail
-  Then : <product> detail with image is displayed
-  
-  Example:
-  |	carousel	||	product								|
-  | first			||	magic mouse						|
-  | second		||	iPhone 5							|
-  | thrd			||	iPod Nano Blue				|
+
+  Scenario Outline: Verify Home Page Links
+    Given User is at DemoQA HomePage
+    When User verifies the home page
+    Then <links> Link is present:
+
+    Examples: 
+      | links            |
+      | Home             |
+      | Product Category |
+      | All Product      |
+      | item checkout    |
+      | My Account       |
