@@ -13,10 +13,11 @@ import cucumber.api.junit.Cucumber;
 		
 		features={"classpath:featuresFile"},
 		glue = {"classpath:stepDefs"}, 
-		monochrome = true,strict=true,
-		dryRun = true,
+		monochrome = true,
+		strict=true,
+		dryRun = false,
         plugin  = {"pretty", "json:target/reports/jsonreport/index.json","html:target/reports/htmlreport","junit:target/reports/xmlreport.xml"},
-		tags={"TC1"}
+		tags={"@TC2"}
 )
 
 public class runnerClass {

@@ -28,7 +28,7 @@ public class hooks
 		driver = new ChromeDriver();
 		driver.get("http://store.demoqa.com/");
 		System.out.println(scenario.getName()+" Scenario Execution Starts...");
-		System.out.println("Using getID method of scenario: "+scenario.getStatus());
+		System.out.println("Using getID method of scenario: "+scenario.getId());
 		driver.manage().window().maximize();
 		wait= new WebDriverWait(driver, 20);
 		
