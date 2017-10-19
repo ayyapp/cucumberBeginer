@@ -1,3 +1,4 @@
+@TestFeature
 Feature: Verify features of DemoQA HomePage
 	@TC1 
   Scenario Outline: Verify Home Page Links

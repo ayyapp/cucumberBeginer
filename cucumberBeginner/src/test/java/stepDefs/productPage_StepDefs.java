@@ -2,6 +2,7 @@ package stepDefs;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeClass;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -18,7 +19,6 @@ public class productPage_StepDefs {
 		this.common=common;		
 		
 	}
-	
 	
 	
 	

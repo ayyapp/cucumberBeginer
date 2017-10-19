@@ -1,6 +1,7 @@
 package stepDefs;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeClass;
 
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Then;
@@ -16,6 +17,7 @@ public class add2Kart_StepDefs
 		// TODO Auto-generated constructor stub
 		this.common=common;
 	}
+	
 	
 	@When("^User clicks on \"([^\"]*)\"$")
 	public void user_clicks_on(String element) throws Throwable {

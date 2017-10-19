@@ -1,5 +1,7 @@
 package cucumberRunner;
 
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
@@ -7,8 +9,8 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		/*features = "src/test/java/featuresFile",*/
-		/*features={"classpath:featuresFile/homePage.feature","classpath:featuresFile/productsPage.feature",
+		/*features = "src/test/java/featuresFile",
+		features={"classpath:featuresFile/homePage.feature","classpath:featuresFile/productsPage.feature",
 				"classpath:featuresFile/add2Kart.feature"},*/
 		
 		features={"classpath:featuresFile"},
@@ -17,13 +19,13 @@ import cucumber.api.junit.Cucumber;
 		strict=true,
 		dryRun = false,
         plugin  = {"pretty", "json:target/reports/jsonreport/index.json","html:target/reports/htmlreport","junit:target/reports/xmlreport.xml"},
-		tags={"@TC2"}
+		tags={"@TC1"}
 )
 
 public class runnerClass {
 	
 	
-
+	
 	public class RunCukeTest {
 
 	}

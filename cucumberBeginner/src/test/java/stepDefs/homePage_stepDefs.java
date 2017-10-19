@@ -1,7 +1,9 @@
 package stepDefs;
 
 
+import org.junit.AfterClass;
 import org.junit.Assert;
+import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 
 import cucumber.api.java.en.Then;
@@ -20,8 +22,6 @@ public class homePage_stepDefs
 	
 	
 	}
-
-	
 	
 	
 	/*@Given("^User is at \"([^\"]*)\" HomePage$")

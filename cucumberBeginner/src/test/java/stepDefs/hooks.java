@@ -35,6 +35,19 @@ public class hooks
 		
 	}
 	
+	@Before("@TestFeature")
+	public void set2()
+	{
+		System.out.println("Before Feature");
+	}
+	
+	@After("@TestFeature")
+	public void set1()
+	{
+		System.out.println("After Feature");
+	}
+	
+	
 	public static WebDriver getDriver()
 	{
 		return driver;

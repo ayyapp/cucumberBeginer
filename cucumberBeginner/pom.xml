@@ -30,18 +30,39 @@
 			<artifactId>cucumber-java</artifactId>
 			<version>${cucumber.version}</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-junit</artifactId>
 			<version>${cucumber.version}</version>
 		</dependency>
+
+
+	<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-testng -->
+	<dependency>
+		<groupId>info.cukes</groupId>
+		<artifactId>cucumber-testng</artifactId>
+		<version>1.2.5</version>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+	<dependency>
+		<groupId>org.testng</groupId>
+		<artifactId>testng</artifactId>
+		<version>6.9.10</version>
+		<scope>test</scope>
+	</dependency>
+	
+	
+		
+		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
 		</dependency>
 
-		<!-- for dependency injection -->
+		
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-picocontainer</artifactId>
