@@ -1,6 +1,8 @@
 package cucumberRunner;
 
+import org.junit.After;
 import org.junit.AfterClass;
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
@@ -24,7 +26,30 @@ import cucumber.api.junit.Cucumber;
 
 public class runnerClass {
 	
+	@BeforeClass
+	public static void beforeClass()
+	{
+		System.out.println("Before Class");
+	}
 	
+	@AfterClass
+	public static void afterclass()
+	{
+		System.out.println("After Class");
+	}
+	
+	@Before
+	public static void before()
+	{
+		System.out.println("@Before....JUNIT");
+	}
+	
+	
+	@After
+	public static void after()
+	{
+		System.out.println("@After...JUNIT");
+	}
 	
 	public class RunCukeTest {
 

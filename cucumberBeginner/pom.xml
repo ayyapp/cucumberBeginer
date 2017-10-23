@@ -90,7 +90,7 @@
 				
 				<configuration>
 						<includes>
-								<include>**/*runnerClass.java</include>
+								<include>**/*testNG_Runner.java</include>
 						</includes>
 				</configuration>
 			</plugin>
