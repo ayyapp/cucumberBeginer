@@ -46,7 +46,7 @@ public class testNG_Runner extends AbstractTestNGCucumberTests {
 	@BeforeTest
 	public void beforeTest()
 	{
-		System.out.println("At before Test");
+		System.out.println("Before Test");
 	}
 	
 	@BeforeMethod
@@ -58,26 +58,26 @@ public class testNG_Runner extends AbstractTestNGCucumberTests {
 	@AfterSuite
 	public void aftersuit()
 	{
-		System.out.println("At After Suite");
+		System.out.println("After Suite");
 	}
 	
 	@AfterClass
 	public void afterClass()
 	{
-		System.out.println("At After Class");
+		System.out.println("After Class");
 	}
 	
 
 	@AfterTest
 	public void afterTest()
 	{
-		System.out.println("At After Test");
+		System.out.println("After Test");
 	}
 	
 	@AfterMethod
 	public void afterMethod()
 	{
-		System.out.println("At After Method");
+		System.out.println("After Method");
 	}
 	
 	public class RunCukeTest {
