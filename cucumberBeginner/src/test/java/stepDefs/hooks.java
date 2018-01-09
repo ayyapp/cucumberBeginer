@@ -21,7 +21,7 @@ public class hooks
 		
 		/*driver=new FirefoxDriver();
 		driver.get("http://store.demoqa.com/");*/
-		
+		System.out.println("Before Hook");
 		this.scenario=scenario;
 		String exePath = "./chromedriver.exe";
 		System.setProperty("webdriver.chrome.driver", exePath);
@@ -35,16 +35,16 @@ public class hooks
 		
 	}
 	
-	@Before("@TestFeature")
+	@Before("@TC1")
 	public void set2()
 	{
-		System.out.println("Before Feature");
+		System.out.println("Tagged Before Hook");
 	}
 	
-	@After("@TestFeature")
+	@After("@TC1")
 	public void set1()
 	{
-		System.out.println("After Feature");
+		System.out.println("Tagged After Hook");
 	}
 	
 	
@@ -56,6 +56,7 @@ public class hooks
 	@After
 	public void tearDown(Scenario scenario)
 	{
+		System.out.println("After Hook");
 		if(scenario.isFailed())
 		{
 			utilityMethods.captureScreenshot(driver, scenario.getName());
