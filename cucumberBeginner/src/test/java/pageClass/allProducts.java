@@ -14,7 +14,7 @@ public class allProducts
 {
 	
 	 WebDriver driver;
-	 static WebDriverWait wait;
+	  WebDriverWait wait;
 	 
 	 public allProducts(WebDriver driver)
 	 {
