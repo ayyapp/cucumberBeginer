@@ -21,10 +21,10 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		features={"classpath:featuresFile"},
 		glue = {"classpath:stepDefs"}, 
 		monochrome = true,
-		strict=true,
-		dryRun = false,
+		strict=false,
+		dryRun = true,
         plugin  = {"pretty", "json:target/reports/jsonreport/index.json","html:target/reports/htmlreport","junit:target/reports/xmlreport.xml"},
-		tags={"@TC1"}
+		tags={"@YouTube"}
 )
 
 public class testNG_Runner extends AbstractTestNGCucumberTests {
