@@ -4,13 +4,13 @@ Description: The purpose of this feature is to test search and play functionalit
 Background: User has launched youtube
 	Given User has landed in youtube homepage
 
-
+@YouTube 
   Scenario: User should be able to search a video
     Given User is on utube landing page
     When User enters "Football" in search box
     And taps on any suggested option
     And User able to see list of all videos related to search
-    
+   
    Scenario: User should be able to search a video
     Given User is on utube landing page
     When User enters "Football" in search box
