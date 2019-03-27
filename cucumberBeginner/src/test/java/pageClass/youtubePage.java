@@ -60,7 +60,25 @@ public class youtubePage extends base
 	@FindBy(xpath="//android.widget.Button[@text='Cancel']")
 	 WebElement canclOption;
 	
+	public boolean verifyPage(String pageNm)
+	{	
+		switch (pageNm.toUpperCase()) {
+		
+		case "YOUTUBE":
+			 b=icon_utubeHome.isDisplayed();
+			 break;
+			 
+		case "":
+			
+			break;
+
+		default:
+			return false;
+		}
+		return b;
 	
+		
+	}
 
 	
 	
